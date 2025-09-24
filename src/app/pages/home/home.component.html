@@ -1,16 +1,61 @@
 <header>
 <app-menu-bar></app-menu-bar>
 </header>
-<app-menu-title></app-menu-title>
 
-<div class="container_articles">
-    <div class="articles_main">
-        <app-big-card></app-big-card>
+    <div class="container_articles">
+        <div class="articles_main">
+            <app-big-card photoCover="https://media.licdn.com/dms/image/v2/D4D03AQFTcOFDyh1aXw/profile-displayphoto-crop_800_800/B4DZk2apbCJMAI-/0/1757554581980?e=1761782400&v=beta&t=lVZFk__QBJct3B8GyVuktEzCZbAsKPm8CmT-7wWWYOA"
+                        cardTitle="Analista e Desenvolvedor de Sistemas"
+                        cardDescription="Há mais de 3 anos atuando como Analista/desenvolvedor Java, e formado em Análise e 
+Desenvolvimento de Sistemas (FMU-Faculdades Metropolitanas Unidas), estou sempre me 
+atualizando e ampliando meus conhecimentos para analisar, projetar, e desenvolver todos os tipos 
+de sistemas computacionais de informação. Possuo experiência com as tecnologias Java, Spring Framework, Oracle (SQL e PL/SQL), Linux e Shell 
+Script, serviços web utilizando SOAP/XML e REST/JSON. "
+            >              
+            </app-big-card>
     </div>
+
     <div class="articles_others">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
+        
+        <app-small-card
+        photoCover="https://brandlogos.net/wp-content/uploads/2025/04/angular_icon-logo_brandlogos.net_jn7wi.png"
+        cardTitle="I've been learning Angular for a while. Click the Luffy image on the side to know more about what I already know about Angular."
+        imgLuffy="../../../../public/luffy.png"
+        [techId]=1
+        ></app-small-card>
+        
+        
+        <app-small-card
+        photoCover="java.png"
+        cardTitle="I've been working with Java for three years, so I know a lot about it by now. Click on the Luffy on the side to see what I can do with Java!"
+        [techId]=2
+        ></app-small-card>
+        
+        
+        <app-small-card
+        photoCover="spring-framework-logo.png"
+        cardTitle="I can also use Spring Framework to create RESTful APIs and develop web applications. Click on the Luffy!"
+        [techId]=3
+        ></app-small-card>
+
+        <app-small-card
+        photoCover="kafka.png"
+        cardTitle="I've also done some work with Kafka. I'm still learning, but click on the Luffy and I'll show you my current level."
+        [techId]=4
+        ></app-small-card>
+
+        <app-small-card
+        photoCover="oracle-logo.png"
+        cardTitle="While working with Java at Minsait, I had to use the Oracle database a lot. Click on the Luffy!"
+        [techId]=5
+        ></app-small-card>
+
+        <app-small-card
+        photoCover="docker.png"
+        cardTitle="I also have experience deploying applications using Docker >>> luffy luffy"
+        [techId]=6
+        ></app-small-card>
+
     </div>
 </div>
 

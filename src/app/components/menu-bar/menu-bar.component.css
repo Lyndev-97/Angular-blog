@@ -5,9 +5,14 @@
 .container_menu-bar > ul{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .container_menu-bar > ul > li{
     margin-right: 20px;
     list-style: none;
+}
+
+.container_menu-bar > hr{
+    width: 100%;
 }

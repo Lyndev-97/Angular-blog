@@ -1,19 +1,27 @@
-.container_big-card{
+.container_big-card {
     margin-left: 25px;
     margin-right: 10px;
-    
-    width: 400px;
+    min-width: 400px; /* largura mínima */
     height: 500px;
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;  /* <-- centraliza no eixo horizontal */
     justify-content: flex-start;
 }
 
+.big-card_photo > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 .big-card_title > h1{
     margin-top: 15px;
-    font-size: 40px;
+    font-size: 28px;
+    
 }
 
 .big-card_description > p{

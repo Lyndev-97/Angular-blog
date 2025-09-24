@@ -1,27 +1,61 @@
 .container_small-card{
-    
-    width: 700%;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .container_small-card-content{
     display: flex;
-    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.small-card_photo > img{
-    --width: 200%;
-    --min-width: 200%;
-    
-    margin-right: 20px;
+/* Novo estilo para o container da esquerda */
+.card-left-content {
+    display: flex;
+    align-items: center;
+     position: relative;
+}
+
+.small-card_photo > img {
+    width: 150px;
+    height: 150px;
+    margin-left: 70px;
+    --min-width: 400px;
+    /* Removido: margin-right: 20px; */
 }
 
 .small-card_title{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
 }
 
-.container_small-card_separator{
-    margin-top: 10px;
+.small-card_title::before {
+    content: ''; /* Necessário para que o pseudo-elemento seja exibido */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Centraliza a linha verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para o centro */
+    width: 2px; /* Espessura da linha */
+    height: 150px; /* Altura da linha (ajuste para a altura do seu símbolo) */
+    background-color: white; /* Cor da linha */
+}
+
+.small-card_title > h1 {
+    font-size: 20px;
+}
+
+
+.luffy-img{
+    margin-right: 100px; 
+}
+
+.luffy-img > img { /* Adicione ou ajuste esta regra */
+    width: 100px; /* Altere para o tamanho que preferir */
+    height: auto; 
 }
